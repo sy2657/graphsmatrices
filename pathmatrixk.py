@@ -10,13 +10,13 @@ def pathmatrixk(m,k):
         powersdictionary[i]= prevm
 
     pathmatk = np.zeros((n,n))
-    for k in range(1,k):
-        kpow = powersdictionary[k]
+    for kk in range(1,k):
+        kpow = powersdictionary[kk]
         for i in range(0,n-1):
             for j in range(0,n-1):
                 if pathmatk[i,j]==0: # check if there already exists path
                     if kpow[i,j]>0:
                         #print('kpow',kpow[i,j])
-                        pathmatk[i,j]= k
+                        pathmatk[i,j]= kk
                     
     return pathmatk 
