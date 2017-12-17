@@ -14,6 +14,8 @@ def pathmatrixk(m,k):
         kpow = powersdictionary[kk]
         for i in range(0,n-1):
             for j in range(0,n-1):
+                if i==j:
+                    continue
                 if pathmatk[i,j]==0: # check if there already exists path
                     if kpow[i,j]>0:
                         #print('kpow',kpow[i,j])
