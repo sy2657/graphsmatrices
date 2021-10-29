@@ -1,10 +1,11 @@
 # find all degrees <= 2 
 ind= 0
+thres=1 # change depending on order of clique to find
 degrees_less_equal2 = []
 for val in sorted_list:
   vertex = sorted_index[ind]
   ind= ind+1
-  if val <=2:
+  if val <=thres:
     # add 
     degrees_less_equal2.append(vertex)
   if val >2:
