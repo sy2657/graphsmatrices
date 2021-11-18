@@ -67,6 +67,7 @@ class Graph():
 					dist[y] = dist[x] + self.graph[x][y]
 
 		self.printSolution(dist)
+		return(dist)
 
 # Driver program
 g = Graph(9)
