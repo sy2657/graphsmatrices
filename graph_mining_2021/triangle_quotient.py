@@ -15,3 +15,6 @@ all_cliques= nx.enumerate_all_cliques(g)
 
 triad_cliques=[x for x in all_cliques if len(x)==3 ]
 
+is_triangle = triad_cliques
+
+Q = nx.quotient_graph(g, is_triangle)
