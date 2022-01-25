@@ -21,3 +21,5 @@ deg_dist = []
 for row in adj_mat:
     rsum = sum(row)
     deg_dist.append(rsum)
+
+max_deg = max(deg_dist)
