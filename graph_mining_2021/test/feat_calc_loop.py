@@ -1,4 +1,5 @@
 # input : nx graph collection g_db2
+import numpy as np
 
 touching_numbers = []
 
@@ -26,13 +27,15 @@ for i in range(len(g_db2)):
     
     deg_dist = []
 
+    adj_mat = nx.to_numpy_matrix(g)
+    
     for row in adj_mat:
         rsum = sum(row)
         deg_dist.append(rsum)
 
     deg_dists.append(deg_dist)
     
-    max_deg = max(deg_dist)
+    max_deg = np.max(deg_dist)
     
     max_degs.append(max_deg)
     
