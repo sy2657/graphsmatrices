@@ -18,7 +18,7 @@ def linegraph(G):
                 ine=ine+1
     print("ine is ", ine)
     # num edge is num 1's divided by 2 
-    ine = s
+    s = ine # changed, Jan 29, 2022
     newadjmat = np.zeros((ine,ine))
     new_edge_list = [] # Jan 7, 2022 
     #edges = non empty intersection
